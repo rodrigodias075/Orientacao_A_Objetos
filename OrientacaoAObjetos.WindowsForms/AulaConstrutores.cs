@@ -12,9 +12,9 @@ using OrientacaoAObjetos.Dia2;
 
 namespace OrientacaoAObjetos.WindowsForms
 {
-    public partial class Form1 : Form
+    public partial class AulaConstrutores : Form
     {
-        public Form1()
+        public AulaConstrutores()
         {
             InitializeComponent();
         }
@@ -37,11 +37,18 @@ namespace OrientacaoAObjetos.WindowsForms
             MessageBox.Show(segurado.Id.ToString());
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button4_Click_1(object sender, EventArgs e)
         {
-            Segurado segurado = new Segurado("Rodrigo","069554536");
+            Segurado segurado = new Segurado("Rodrigo", "069554536");
             MessageBox.Show(segurado.Nome);
             MessageBox.Show(segurado.CPF);
+
+
+        }
+
+        private void btnDia3_Click(object sender, EventArgs e)
+        {
+            new RevisaoConstrutores().Show();
         }
     }
 }
